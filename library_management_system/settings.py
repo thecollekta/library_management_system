@@ -97,10 +97,6 @@ WSGI_APPLICATION = "library_management_system.wsgi.application"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
-}
-
-DATABASES = {
     "default": {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'lmsdb',
@@ -111,6 +107,9 @@ DATABASES = {
     }
 }
 
+DATABASES = {
+    'default': dj_database_url.parse("postgresql://library_management_system_5yfz_user:8SyrfWHfXnoMbleeGOMxnSzapS6rMGAj@dpg-cs2j2ul6l47c73bjclqg-a.oregon-postgres.render.com/library_management_system_5yfz")
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
