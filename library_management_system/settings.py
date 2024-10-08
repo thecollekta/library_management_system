@@ -32,7 +32,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=True)
 
-ALLOWED_HOSTS = ['library_management_system.onrender.com']
+ALLOWED_HOSTS = ['library-management-system-38t2.onrender.com']
 
 
 # Application definition
